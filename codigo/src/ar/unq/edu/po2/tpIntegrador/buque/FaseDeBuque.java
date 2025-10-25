@@ -1,11 +1,8 @@
 package ar.unq.edu.po2.tpIntegrador.buque;
 
-public class FaseDeBuque {
+public interface FaseDeBuque {
 
-	public void actualizar(Buque buque, int distancia) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void actualizar(Buque buque, int distancia);
 	
-	//TODO: Completar fases de buque
+	public void notificarTerminal(Buque buque);
 }
