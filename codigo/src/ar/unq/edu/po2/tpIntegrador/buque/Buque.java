@@ -3,7 +3,6 @@ package ar.unq.edu.po2.tpIntegrador.buque;
 import java.util.ArrayList;
 
 import ar.unq.edu.po2.tpIntegrador.Containers.Container;
-import ar.unq.edu.po2.tpIntegrador.terminal.Terminal;
 
 public class Buque implements Observador {
 	String nombre;
@@ -28,16 +27,16 @@ public class Buque implements Observador {
 		containers.remove(container);
 	}
 	
-	public Terminal proximaTerminal() {
-		// TODO: Cuando se implementen los circuitos cons sus viajes y demás, hay que actualizar éste método con la lógica necesaria.
-		// 
-		return new Terminal();
+	public void setViaje(Viaje viajeARealizar) {
+		this.viajeARealizar = viajeARealizar;
+	}
+	
+	public Viaje getViaje() {
+		return viajeARealizar;
 	}
 	
 	@Override
 	public void actualizar(int distancia) {
-		estado.actualizar(this, distancia);
+		estado.actualizar(this, distancia, this.getViaje());
 	}
-	
-	
 }

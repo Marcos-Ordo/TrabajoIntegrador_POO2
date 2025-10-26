@@ -20,4 +20,9 @@ public class Terminal {
 		// TODO Auto-generated method stub
 		
 	}
+
+	public void enviarMailALosConsignees() {
+		// TODO Auto-generated method stub
+		
+	}
 }
