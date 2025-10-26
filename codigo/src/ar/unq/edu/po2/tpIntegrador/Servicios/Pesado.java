@@ -1,5 +1,7 @@
 package ar.unq.edu.po2.tpIntegrador.Servicios;
 
+import ar.unq.edu.po2.tpIntegrador.Containers.Container;
+
 public class Pesado implements Servicio {
 	
 	private Double precio; 
@@ -8,11 +10,15 @@ public class Pesado implements Servicio {
 		this.precio = precio; 
 	}
 
-	@Override
 	public Double getPrecio() {
-		// TODO Auto-generated method stub
 		return precio;
 	}
 
+	@Override
+	public Double precioDelServicio(Container container) {
+		return this.getPrecio();
+	}
+	
+	
 
 }

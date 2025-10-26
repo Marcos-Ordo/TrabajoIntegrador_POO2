@@ -34,6 +34,10 @@ public abstract class Container {
 		return altura;
 	}
 	
+	public int getMetroCubico() {
+		return this.getAltura() * this.getAncho() * this.getLargo();
+	}
+	
 	public int getPeso() {
 		return peso;
 	}
