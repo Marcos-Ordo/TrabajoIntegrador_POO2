@@ -6,7 +6,23 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="jarFiles/byte-buddy-1.15.7.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="jarFiles/mockito-core-5.14.2.jar" sourcepath="/home/marcoso/repos/TrabajoIntegrador_POO2/codigo/jarFiles/mockito-core-5.14.2-sources.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="jarFiles/net.bytebuddy.byte-buddy-agent_1.15.7.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="test"/>
+	<classpathentry excluding="ar/unq/edu/po2/tpIntegrador/Containers/|ar/unq/edu/po2/tpIntegrador/Containers/" kind="src" path="test"/>
+	<classpathentry kind="src" path="jarFiles"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
